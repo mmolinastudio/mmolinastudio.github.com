@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://mmolinastudio.github.io/sitemap.xml 
