@@ -89,7 +89,7 @@
   <!-- GitHub -->
   
   <li>
-  <a href="http://github.com/mmolinastudio" class="github" title="Github"></a>
+  <a href="http://github.com/miguelmolinaes" class="github" title="Github"></a>
   </li>
   
 
@@ -111,19 +111,10 @@
 
 <!-- use full url including 'index.html' for navigation bar if you are using ajax -->
 <ul id="nav">
-	<li id="ajax"><a href="/index.html">Blog</a></li>
-	<li id="ajax"><a href="/blog/archives/index.html">Archivo</a></li>
-    
-    <li>
-    <div id="dark">
-        <form method="get" action="/search.html" id="search">
-            <input name="query" type="text" placeholder="Search..." x-webkit-speech />
-        </form>
-    </div>
-    </li>
+	<li><a href="/index.html">Blog</a></li>
+	<li><a href="/blog/archives/index.html">Archivo</a></li>
         
 </ul>
-
 
 
 
@@ -133,6 +124,7 @@
 <!-- begin toload --> 
     <div id="content" class="inner">
         <article class="post">
+	
 	<h2 class="title">Mi Primer Post. Goodbye Posterous</h2>
 	<div class="entry-content"><p>Nuevo blog. Y con este van&#8230; ¿cuatro? A ver, recapitulemos.</p>
 
@@ -149,10 +141,11 @@
 <p>Ya va siendo hora de dejar de escribir sobre mi vida privada. Soy programador web, y de eso voy a hablar.</p>
 </div>
 
-<div class="meta">
+
+
 	
-</div>
 </article>
+
 
 	<div class="share">
 	<div class="addthis_toolbox addthis_default_style ">
@@ -167,6 +160,36 @@
 </div>
 
 
+
+
+<section id="comment">
+    <h2 class="title">Comentarios</h2>
+    
+
+
+
+<div id="disqus_thread" aria-live="polite"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'mmolinastudio'; // required: replace example with your forum shortname
+    
+      
+      // var disqus_developer = 1;
+      var disqus_identifier = 'http://mmolinastudio.github.io/blog/2013/05/02/mi-primer-post-goodbye-posterous/';
+      var disqus_url = 'http://mmolinastudio.github.io/blog/2013/05/02/mi-primer-post-goodbye-posterous/';
+      var disqus_script = 'embed.js';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Por favor, active JavaScript para ver los<a href="http://disqus.com/?ref_noscript">comentarios.</a><br>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</section>
 
     </div>
     <footer id="footer">
@@ -184,6 +207,7 @@
 
     </footer>
     <script src="/javascripts/fabric.js"></script>
+
 <script src="/javascripts/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 (function($){
