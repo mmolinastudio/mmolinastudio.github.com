@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Miguel Molina]]></title>
-  <link href="http://miguel-molina.es/atom.xml" rel="self"/>
+  <title><![CDATA[Category: mongodb | Miguel Molina]]></title>
+  <link href="http://miguel-molina.es/blog/categories/mongodb/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
   <updated>2013-05-08T20:17:00+02:00</updated>
   <id>http://miguel-molina.es/</id>
@@ -69,11 +69,11 @@ $ sudo service mongodb restart
 <p>Aunque aún me queda probarlas, he hecho una selección de las GUIs que más me han gustado.</p>
 
 <ul>
-<li><a href="http://www.phpmoadmin.com/" title="phpMoAdmin">phpMoAdmin</a>. Lo básico para consultar y editar BDs, importar/exportar ficheros json,&#8230; en un solo archivo php de 95kb.</li>
-<li><a href="http://code.google.com/p/rock-php/wiki/rock_mongo" title="rockmongo">Rockmongo</a>. También escrita en php pero con más opciones que la anterior. (e.g. creación de BDs, gestión de usuarios,&#8230;)</li>
+<li><a href="http://www.phpmoadmin.com/" title="phpMoAdmin">phpMoAdmin</a>. Lo básico para consultar y editar BDs, importar/exportar ficheros json,... en un solo archivo php de 95kb.</li>
+<li><a href="http://code.google.com/p/rock-php/wiki/rock_mongo" title="rockmongo">Rockmongo</a>. También escrita en php pero con más opciones que la anterior. (e.g. creación de BDs, gestión de usuarios,...)</li>
 <li><a href="http://genghisapp.com/" title="genghis app">GenghisApp</a> y <a href="http://mongo3.com/" title="mongo3">Mongo3</a>. Opciones Ruby ineresantes.</li>
 <li><a href="https://github.com/Fiedzia/Fang-of-Mongo" title="fang of mongo">Fang of Mongo</a>. Opción Python/Django.</li>
-<li><a href="http://robomongo.org/" title="robomongo">RoboMongo</a>. En inglés se define como <em>&#8220;shell-centric cross-platform open source MongoDB management tool&#8221;</em>. Traducir <em>shell-centric</em> es imposible. Si alguien lo sabe explicar, por favor que deje un comentario. Yo supongo que se refiere a que el programa está basado en el shell de mongo, y simplemente ofrece una ayuda gráfica para escribir los comandos. Es posible que me equivoque y sea más potente, pero hasta que no lo pruebe no puedo hablar. Lo que sí está claro es que RoboMongo es una Aplicación multiplataforma escrita en C++ y sigue en pleno desarrollo.</li>
+<li><a href="http://robomongo.org/" title="robomongo">RoboMongo</a>. En inglés se define como <em>"shell-centric cross-platform open source MongoDB management tool"</em>. Traducir <em>shell-centric</em> es imposible. Si alguien lo sabe explicar, por favor que deje un comentario. Yo supongo que se refiere a que el programa está basado en el shell de mongo, y simplemente ofrece una ayuda gráfica para escribir los comandos. Es posible que me equivoque y sea más potente, pero hasta que no lo pruebe no puedo hablar. Lo que sí está claro es que RoboMongo es una Aplicación multiplataforma escrita en C++ y sigue en pleno desarrollo.</li>
 <li><a href="http://edgytech.com/umongo/" title="umongo">UMongo</a>. De momento quiero una interfaz web y UMongo es una aplicación Java, pero la dejo en la lista por estar respaldada por la comunidad, tener buenas opiniones, y como las anteriores, ser multiplataforma y open source.</li>
 </ul>
 
@@ -88,27 +88,6 @@ $ sudo service mongodb restart
 - Administration Interfaces: <a href="http://docs.mongodb.org/ecosystem/tools/administration-interfaces/">http://docs.mongodb.org/ecosystem/tools/administration-interfaces/</a><br>
 - RockMongo vs phpMoAdmin (2011): <a href="http://my.safaribooksonline.com/book/-/9781849513623/easy-mongodb-administration-with-rockmongo-and-phpmoadmin/ch10lvl1sec05">http://my.safaribooksonline.com/book/-/9781849513623/easy-mongodb-administration-with-rockmongo-and-phpmoadmin/ch10lvl1sec05</a>
 </small></small></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mi primer post. Goodbye Posterous]]></title>
-    <link href="http://miguel-molina.es/blog/2013/05/02/mi-primer-post-goodbye-posterous/"/>
-    <updated>2013-05-02T19:55:00+02:00</updated>
-    <id>http://miguel-molina.es/blog/2013/05/02/mi-primer-post-goodbye-posterous</id>
-    <content type="html"><![CDATA[<p>Nuevo blog. Y con este van&#8230; ¿cuatro? A ver, recapitulemos.</p>
-
-<p>Cuando empecé a escribir en internet, Google aún no había comprado Blogger. Descubrí que con un blog podías defecar lo que quisieras desde el anonimato y me puse a escribir relatos cortos y ensayos sobre el sentido de la vida y el amor, siempre con un toque muy emo-pesimista -esto necesita una explicacion. Aún iba al colegio, estaba en la edad&#8230;-. Creo que todavía conservo los posts en algún archivo encriptado y por suerte no queda rastro del aquel blog.</p>
-
-<p>En algún momento dejé de escribir y pasaron un par de años en los que me olvidé del blog, pero echaba de menos tener un sitio donde poder escribir si me apetecía, así que abrí otro, de nuevo en Blogger, y borré el anterior por vergüenza. Coincidió con que el gobierno de ZP regalaba dominios <em>.es</em> y elegí <em>tetonia.es</em>. Creo que en su día, al abrir el blog, expliqué por qué escogí ese nombre. Escribía poco y muy de vez en cuando. Me tomé la libertad de escribir sin tabúes sobre cualquier tema. Mi vida, vídeos frikis, críticas de películas y libros, política, religión, mis primeras opiniones como ciudadano indignado&#8230; Fueron mis años de universitario, una época en la que conocí gente interesante y cambió totalmente mi forma de ver el mundo.</p>
-
-<p>Igual que con el anterior, cada vez escribía menos. Lo fui abandonando igual que a mi cuenta de twitter en estos últimos meses. Hasta que en febrero de 2012 me cambié a Posterous y seguí escribiendo al mismo ritmo. O sea, f_kn shit. 14 posts en dos años.</p>
-
-<p>Ahora veo los blogs y no me gustan. Nunca ha habido coherencia entre unos posts y otros. He tocado en todo tipo de temas -lo cual, si buscas reputación y lectores, es lo peor que puedes hacer-, e incluso puede que haya ofendido a algún lector alguna vez. Unas veces he usado un lenguaje vulgar y otras más cuidado. Pero la verdad es que todo eso me ha dado siempre igual. Eran blogs personales.</p>
-
-<p>Ahora que <a href="https://posterous.com/bye.html" title="Posterous">Posterous</a> desaparece, llega el momento de cambiarse a una plataforma mejor, <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>/<a href="http://pages.github.com/" title="github pages">Github</a> (gracias por la información <a href="http://chimeces.com/" title="Joakin's page">Joakin</a>). Con <a href="http://octopress.org/" title="Octopress">Octopres</a> (jekyll preconfigurado), el blog ya está montado con un tema básico. Es muy facil instalar temas nuevos (yo me estoy basando en <a href="https://github.com/panks/fabric" title="Fabric Theme">Fabric</a>, con la idea de integrarlo con initializr). Jekyll está completamente escrito en ruby y usa gemas como <a href="http://dafoster.net/projects/rdiscount/" title="RDiscount">rdiscount</a> (para convertir documentos <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> en HTML), <a href="http://sass-lang.com/" title="sass css preprocessor">SASS</a> (preprocesador CSS), <a href="https://github.com/Shopify/liquid" title="liquid">Liquid</a> (motor de plantillas con una sintaxis tipo Django y Twig) y más que ya iré descubriendo.</p>
-
-<p>Ya va siendo hora de dejar de escribir sobre mi vida privada. Soy programador web, y de eso voy a hablar.</p>
 ]]></content>
   </entry>
   
