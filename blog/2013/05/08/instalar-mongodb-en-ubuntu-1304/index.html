@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Instalación de MongoDB en Ubuntu 13.04 | Miguel Molina</title>
+	<title>Instalar MongoDB en Ubuntu 13.04 | Miguel Molina</title>
     <meta name="author" content="Miguel Molina">
     
 	<meta name="description" content="El mes pasado empecé un proyecto usando MySQL. En principio iba a ser una web para uso local pero poco a poco empecé a añadirle cosas, a pensar en &hellip;">
@@ -103,7 +103,7 @@
   <!-- Mail -->
   
   <li>
-  <a href="mailto:miguelmolinastudio@gmail.com?Subject=contacto_miguel-molina.es" class="mail_bt" title="miguelmolinastudio@gmail.com"></a>
+  <a href="mailto:me@miguel-molina.es?Subject=contacto_miguel-molina.es" class="mail_bt" title="me@miguel-molina.es"></a>
   </li>
   
 </ul>
@@ -125,7 +125,7 @@
     <div id="content" class="inner">
         <article class="post">
 	
-	<h2 class="title">Instalación de MongoDB en Ubuntu 13.04</h2>
+	<h2 class="title">Instalar MongoDB en Ubuntu 13.04</h2>
 	<div class="entry-content">
 		<p>El mes pasado empecé un proyecto usando MySQL. En principio iba a ser una web para uso local pero poco a poco empecé a añadirle cosas, a pensar en algo más grande y ahora estoy viendo que si quiero hacerlo bien, necesito una Base de Datos más eficiente. Nunca he usado NoSQL y creo que este es un buen momento para empezar.</p>
 
@@ -173,7 +173,7 @@ $ sudo service mongodb restart
 &gt; db.test.find()
 </code></pre>
 
-<h4>Interfaces gráficas</h4>
+<h3>Interfaces gráficas</h3>
 
 <p>Aunque aún me queda probarlas, he hecho una selección de las GUIs que más me han gustado.</p>
 
@@ -187,6 +187,18 @@ $ sudo service mongodb restart
 </ul>
 
 
+<h4>Instalar phpMoAdmin y RockMongo</h4>
+
+<p>Para instalar cualquiera de estas interfaces, antes hemos de instalar el driver de php para mongo de esta forma:</p>
+
+<pre><code>$ sudo apt-get install php5-dev php-pear
+$ sudo pecl install mongo
+</code></pre>
+
+<p>y añadir al archivo <em>php.ini</em> (ubicado en <em>/etc/php5/apache2/</em>) la línea <code>extension=mongo.so</code>.</p>
+
+<p>La instalación es tan sencilla como descargar y descomprimir ambas interfaces en la carpeta <em>/home/username/www/</em> o donde tengas tus archivos públicos de Apache, y acceder a <a href="http://localhost/moadmin.php">http://localhost/moadmin.php</a> o <a href="http://localhost/rockmongo">http://localhost/rockmongo</a> (username:admin, password:admin). Recuerda reiniciar antes los servicios de apache y mongodb.</p>
+
 <br>
 
 
@@ -195,7 +207,8 @@ $ sudo service mongodb restart
 <p><small><small>
 - Install MongoDB on Ubuntu: <a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/">http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/</a><br>
 - Administration Interfaces: <a href="http://docs.mongodb.org/ecosystem/tools/administration-interfaces/">http://docs.mongodb.org/ecosystem/tools/administration-interfaces/</a><br>
-- RockMongo vs phpMoAdmin (2011): <a href="http://my.safaribooksonline.com/book/-/9781849513623/easy-mongodb-administration-with-rockmongo-and-phpmoadmin/ch10lvl1sec05">http://my.safaribooksonline.com/book/-/9781849513623/easy-mongodb-administration-with-rockmongo-and-phpmoadmin/ch10lvl1sec05</a>
+- RockMongo vs phpMoAdmin (2011): <a href="http://my.safaribooksonline.com/book/-/9781849513623/easy-mongodb-administration-with-rockmongo-and-phpmoadmin/ch10lvl1sec05">http://my.safaribooksonline.com/book/-/9781849513623/easy-mongodb-administration-with-rockmongo-and-phpmoadmin/ch10lvl1sec05</a><br>
+- Install mongo extension for PHP: <a href="http://www.php.net/manual/en/mongo.installation.php">http://www.php.net/manual/en/mongo.installation.php</a>
 </small></small></p>
 
 	</div>
@@ -234,8 +247,8 @@ $ sudo service mongodb restart
     
       
       // var disqus_developer = 1;
-      var disqus_identifier = 'http://miguel-molina.es/blog/2013/05/08/instalando-mongodb-en-ubuntu-1304/';
-      var disqus_url = 'http://miguel-molina.es/blog/2013/05/08/instalando-mongodb-en-ubuntu-1304/';
+      var disqus_identifier = 'http://miguel-molina.es/blog/2013/05/08/instalar-mongodb-en-ubuntu-1304/';
+      var disqus_url = 'http://miguel-molina.es/blog/2013/05/08/instalar-mongodb-en-ubuntu-1304/';
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
