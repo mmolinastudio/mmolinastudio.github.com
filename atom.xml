@@ -4,7 +4,7 @@
   <title><![CDATA[Miguel Molina]]></title>
   <link href="http://miguel-molina.es/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
-  <updated>2013-05-09T14:35:20+02:00</updated>
+  <updated>2013-05-09T18:21:01+02:00</updated>
   <id>http://miguel-molina.es/</id>
   <author>
     <name><![CDATA[Miguel Molina]]></name>
@@ -20,7 +20,7 @@
     <id>http://miguel-molina.es/blog/2013/05/08/instalar-mongodb-en-ubuntu-1304</id>
     <content type="html"><![CDATA[<p>El mes pasado empecé un proyecto usando MySQL. En principio iba a ser una web para uso local pero poco a poco empecé a añadirle cosas, a pensar en algo más grande y ahora estoy viendo que si quiero hacerlo bien, necesito una Base de Datos más eficiente. Nunca he usado NoSQL y creo que este es un buen momento para empezar.</p>
 
-<p>¿Y por qué decantarme por MongoDB y no por CoucDB, Cassandra, BigTable o cualquier otra? Simplemente porque estoy usando la librería IonAuth de Codeigniter, que usa InnoDB o MongoDB, y no quiero complicarme la vida. La migración será mucho más facil.</p>
+<p>¿Y por qué decantarme por MongoDB y no por CouchDB, Cassandra, BigTable o cualquier otra? Simplemente porque estoy usando la librería IonAuth de Codeigniter, que usa InnoDB o MongoDB, y no quiero complicarme la vida. La migración será mucho más facil.</p>
 
 <p>Os dejo una pequeña intrducción de qué es MongoDB <small><small><a href="http://es.wikipedia.org/wiki/MongoDB" title="mongodb">(by Wikipedia)</a></small></small>:</p>
 
