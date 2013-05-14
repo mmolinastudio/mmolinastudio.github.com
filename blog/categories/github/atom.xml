@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: github | Miguel Molina]]></title>
+  <link href="http://miguel-molina.es/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://miguel-molina.es/"/>
+  <updated>2013-05-14T18:51:12+02:00</updated>
+  <id>http://miguel-molina.es/</id>
+  <author>
+    <name><![CDATA[Miguel Molina]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Documentación de Git en Español]]></title>
+    <link href="http://miguel-molina.es/blog/2013/05/14/documentacion-de-git-en-castellano/"/>
+    <updated>2013-05-14T13:55:00+02:00</updated>
+    <id>http://miguel-molina.es/blog/2013/05/14/documentacion-de-git-en-castellano</id>
+    <content type="html"><![CDATA[<p>A pesar de que en la carrera tuve una asignatura llamada "Herramientas de Programacion", algo que ahora echo en falta es, precisamente, una mejor preparación en cuanto a herramientas de programación.</p>
+
+<p>En esa asignatura (que por cierto, sólo se daba en Ingeniería Informática y no en las técnicas, cosa que no me explico), se estudiaba teoría y práctica de Compiladores, Depuradores, Editores de texto, Bash, Optimización de Código,... y obviamente Control de Versiones. Lógicamente no había un libro oficial que incluyera todo y los apuntes eran las transparencias de clase, que hoy en día las veo y me pregunto como podía estudiar con eso. ¿Por qué muchos profesores no querían dar los apuntes en otro formato? Nunca lo sabré.</p>
+
+<p>En definitiva. Estaba muy bien que existiera esa asignatura, y que además sólo enseñasen herramientas de software libre, pero por unos motivos u otros, después de cursarla seguías programando con las mismas herramientas que antes. Bueno, le sacabas provecho a gdb, make, bash, kate,... incluso alguno de mis amigos le cogió cariño a grep, cat, vim, y cosas así. Pero en cuanto a Control de Versiones, no recuerdo que ninguno de mis compañeros de carrera usase nunca CVS (que era lo que se enseñaba). Por otro lado, ninguno de mis profesores de otras asignaturas y cursos posteriores nos animó a usar CVS, SVN o cualquier otra cosa, pese a lo útil que habría sido en muchas ocasiones, donde se programaba mucho y a veces en grupo.</p>
+
+<p>Pensaba que esas <em>buenas practicas</em> las aprendería al entrar en la empresa, pero pasé por tres pequeñas empresas y sólo una usaba SVN. El servidor ya estaba configurado (la aplicación llevaba unos 4 o 5 años en desarrollo) y la interfaz gráfica que usaban era fácil de usar, aunque realmente no me atrevía a tocarla demasiado. Lo usaba de forma muy básica. Sólo sabía que mientras estuviera editando un archivo, nadie más podía abrirlo. Y que después de trabajar con él debía dejarlo libre. Ojalá me acordase del programa. Era horriblemente lento.</p>
+
+<p>La cuestión es que nunca he usado el profundidad ningún programa de control de versiones. Desde hace algo más de un año he querido aprender Git, pero a la hora de ponerme a picar seguía con la mismas malas prácticas de siempre, por eso de que no estaba trabajando para nadie y me apañaba con mi forma de organizarme. Que básicamente consistía en: Hago cambios -> ¿Funciona? si -> sobreescribo | no -> ctrl+z. Y de vez en cuando guardar una copia del proyecto.</p>
+
+<p>Hace unos tres o cuatro meses me decidí por fin a usar Git en todos mis proyectos. He de decir que <a href="http://windows.github.com/" title="github for windows">Github for Windows</a> me ayudó bastante a dar ese paso. La interfaz está bien diseñada, es bonita e increíblemente fácil de usar. En cuando a git en la consola de linux, el uso que le he dado hasta el momento ha sido muy básico; crear repositorios, hacer commits, configurarlo con mi cuenta de github y poco más. Pero me pierdo un poco cuando empiezo a crear branches, deshacer cambios, o cosas mas complejas, por eso necesito ponerme en serio y dedicarle algo de tiempo. Ayer vi que ya estaba casi toda la documentación traducida al castellano, así que la junté en un archivo junto a varias Cheat Sheets y hoy lo he imprimido y encuadernado (a ver cuando me compro un kindle).</p>
+
+<p>Dejo aquí los archivos por si alguien (o yo mismo) quiere la documentación de GIT en odt/pdf. <small>Actualizada a día 13 de mayo. 92% traducido.</small><br/><strong><a href="/archivos/git_book.pdf">git_book.pdf</a></strong><br/><strong><a href="/archivos/git_book.odt">git_book.odt</a></strong></p>
+
+<p>Documentación oficial de Git en Español: <a href="http://git-scm.com/book/es">http://git-scm.com/book/es</a></p>
+
+<p>Si alguien lee esto, un abrazo!</p>
+]]></content>
+  </entry>
+  
+</feed>

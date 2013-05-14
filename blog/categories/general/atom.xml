@@ -4,7 +4,7 @@
   <title><![CDATA[Category: general | Miguel Molina]]></title>
   <link href="http://miguel-molina.es/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
-  <updated>2013-05-10T17:17:54+02:00</updated>
+  <updated>2013-05-14T18:51:12+02:00</updated>
   <id>http://miguel-molina.es/</id>
   <author>
     <name><![CDATA[Miguel Molina]]></name>
@@ -30,7 +30,7 @@
 
 <p>Ahora que <a href="https://posterous.com/bye.html" title="Posterous">Posterous</a> desaparece, llega el momento de cambiarse a una plataforma mejor, <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>/<a href="http://pages.github.com/" title="github pages">Github</a> (gracias por la información <a href="http://chimeces.com/" title="Joakin's page">Joakin</a>). Con <a href="http://octopress.org/" title="Octopress">Octopres</a> (jekyll preconfigurado), el blog ya está montado con un tema básico. Es muy facil instalar temas nuevos (yo me estoy basando en <a href="https://github.com/panks/fabric" title="Fabric Theme">Fabric</a>, con la idea de integrarlo con initializr). Jekyll está completamente escrito en ruby y usa gemas como <a href="http://dafoster.net/projects/rdiscount/" title="RDiscount">rdiscount</a> (para convertir documentos <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> en HTML), <a href="http://sass-lang.com/" title="sass css preprocessor">SASS</a> (preprocesador CSS), <a href="https://github.com/Shopify/liquid" title="liquid">Liquid</a> (motor de plantillas con una sintaxis tipo Django y Twig) y más que ya iré descubriendo.</p>
 
-<p>Ya va siendo hora de dejar de escribir sobre mi vida privada. Soy programador web, y de eso voy a hablar.</p>
+<p>Ya va siendo hora de escribir sobre Programación Web.</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,252 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Documentación de Git en Español | Miguel Molina</title>
+    <meta name="author" content="Miguel Molina">
+    
+	<meta name="description" content="A pesar de que en la carrera tuve una asignatura llamada &#8220;Herramientas de Programacion&#8221;, algo que ahora echo en falta es, precisamente, &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Miguel Molina" type="application/atom+xml">
+	<link rel="canonical" href="">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" />
+
+	
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Amethysta|Inconsolata|Noto+Serif' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+
+    <!-- remove or comment it to disable ajaxification -->   
+    <script src="/javascripts/ajaxify.js"></script>
+   
+    
+    
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-38035414-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+    <div id="wrapper">
+    <header id="header" class="inner"><!-- h1 class="animated bounceInDown" - for more effects see _animate.scss -->
+<h1>
+	<div class="pointcolor"> </div>
+    <div class="headerbg">
+         {{ miguel_molina }} 
+    </div>
+</h1>
+
+<ul id="social-links">
+  <!-- Google Plus -->
+  
+
+  <!-- Twitter -->
+  
+  <li>
+  <a href="http://www.twitter.com/mmolinastudio" class="twitter" title="Twitter"></a>
+  </li>
+  
+
+  <!-- Facebook -->
+  
+  <li>
+  <a href="http://www.facebook.com/miguelitomp" class="facebook" title="Facebook"></a>
+  </li>
+  
+
+  <!-- LinkedIn -->
+  
+  <li>
+  <a href="http://www.linkedin.com/in/miguelmolinaplanelles" class="linkedin" title="LinkedIn"></a>
+  </li>
+  
+
+  <!-- Skype -->
+  
+
+  <!-- Youtube -->
+  
+
+  <!-- LastFM -->
+  
+
+  <!-- GitHub -->
+  
+  <li>
+  <a href="http://github.com/mmolinastudio" class="github" title="Github"></a>
+  </li>
+  
+
+  <!-- RSS -->
+  
+  <li>
+  <a href="/atom.xml" class="rss_socialbt" title="rss"></a>
+  </li>
+  
+
+  <!-- Mail -->
+  
+  <li>
+  <a href="mailto:me@miguel-molina.es?Subject=contacto_miguel-molina.es" class="mail_bt" title="me@miguel-molina.es"></a>
+  </li>
+  
+</ul>
+
+
+<!-- use full url including 'index.html' for navigation bar if you are using ajax -->
+<nav>
+    <ul id="nav">
+    	<li><a href="/">Blog</a></li>
+    	<li><a href="/blog/archives/">Archivo</a></li>
+        
+        <li class="dark_search">
+            <form method="get" action="http://google.com/search?q=" id="search" target="_blank">
+                    <input type="hidden" name="q" value="site:miguel-molina.es" />
+                    <input class="span2" type="text" name="q" results="0" placeholder="Search..." x-webkit-speech/>
+            </form>
+        </li>
+        
+    </ul>
+</nav>
+
+
+</header>
+
+<div id="toload">
+<!-- begin toload --> 
+    <div id="content" class="inner">
+        <article class="post">
+	
+	<h2 class="title">Documentación de Git en Español</h2>
+	<div class="entry-content">
+		<p>A pesar de que en la carrera tuve una asignatura llamada &#8220;Herramientas de Programacion&#8221;, algo que ahora echo en falta es, precisamente, una mejor preparación en cuanto a herramientas de programación.</p>
+
+<p>En esa asignatura (que por cierto, sólo se daba en Ingeniería Informática y no en las técnicas, cosa que no me explico), se estudiaba teoría y práctica de Compiladores, Depuradores, Editores de texto, Bash, Optimización de Código,&#8230; y obviamente Control de Versiones. Lógicamente no había un libro oficial que incluyera todo y los apuntes eran las transparencias de clase, que hoy en día las veo y me pregunto como podía estudiar con eso. ¿Por qué muchos profesores no querían dar los apuntes en otro formato? Nunca lo sabré.</p>
+
+<p>En definitiva. Estaba muy bien que existiera esa asignatura, y que además sólo enseñasen herramientas de software libre, pero por unos motivos u otros, después de cursarla seguías programando con las mismas herramientas que antes. Bueno, le sacabas provecho a gdb, make, bash, kate,&#8230; incluso alguno de mis amigos le cogió cariño a grep, cat, vim, y cosas así. Pero en cuanto a Control de Versiones, no recuerdo que ninguno de mis compañeros de carrera usase nunca CVS (que era lo que se enseñaba). Por otro lado, ninguno de mis profesores de otras asignaturas y cursos posteriores nos animó a usar CVS, SVN o cualquier otra cosa, pese a lo útil que habría sido en muchas ocasiones, donde se programaba mucho y a veces en grupo.</p>
+
+<p>Pensaba que esas <em>buenas practicas</em> las aprendería al entrar en la empresa, pero pasé por tres pequeñas empresas y sólo una usaba SVN. El servidor ya estaba configurado (la aplicación llevaba unos 4 o 5 años en desarrollo) y la interfaz gráfica que usaban era fácil de usar, aunque realmente no me atrevía a tocarla demasiado. Lo usaba de forma muy básica. Sólo sabía que mientras estuviera editando un archivo, nadie más podía abrirlo. Y que después de trabajar con él debía dejarlo libre. Ojalá me acordase del programa. Era horriblemente lento.</p>
+
+<p>La cuestión es que nunca he usado el profundidad ningún programa de control de versiones. Desde hace algo más de un año he querido aprender Git, pero a la hora de ponerme a picar seguía con la mismas malas prácticas de siempre, por eso de que no estaba trabajando para nadie y me apañaba con mi forma de organizarme. Que básicamente consistía en: Hago cambios -> ¿Funciona? si -> sobreescribo | no -> ctrl+z. Y de vez en cuando guardar una copia del proyecto.</p>
+
+<p>Hace unos tres o cuatro meses me decidí por fin a usar Git en todos mis proyectos. He de decir que <a href="http://windows.github.com/" title="github for windows">Github for Windows</a> me ayudó bastante a dar ese paso. La interfaz está bien diseñada, es bonita e increíblemente fácil de usar. En cuando a git en la consola de linux, el uso que le he dado hasta el momento ha sido muy básico; crear repositorios, hacer commits, configurarlo con mi cuenta de github y poco más. Pero me pierdo un poco cuando empiezo a crear branches, deshacer cambios, o cosas mas complejas, por eso necesito ponerme en serio y dedicarle algo de tiempo. Ayer vi que ya estaba casi toda la documentación traducida al castellano, así que la junté en un archivo junto a varias Cheat Sheets y hoy lo he imprimido y encuadernado (a ver cuando me compro un kindle).</p>
+
+<p>Dejo aquí los archivos por si alguien (o yo mismo) quiere la documentación de GIT en odt/pdf. <small>Actualizada a día 13 de mayo. 92% traducido.</small><br/><strong><a href="/archivos/git_book.pdf">git_book.pdf</a></strong><br/><strong><a href="/archivos/git_book.odt">git_book.odt</a></strong></p>
+
+<p>Documentación oficial de Git en Español: <a href="http://git-scm.com/book/es">http://git-scm.com/book/es</a></p>
+
+<p>Si alguien lee esto, un abrazo!</p>
+
+	</div>
+
+
+
+	
+</article>
+
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h2 class="title">Comentarios</h2>
+    
+
+
+
+<div id="disqus_thread" aria-live="polite"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'miguelmolinaes'; // required: replace example with your forum shortname
+    
+      
+      // var disqus_developer = 1;
+      var disqus_identifier = 'http://miguel-molina.es/blog/2013/05/14/documentacion-de-git-en-castellano/';
+      var disqus_url = 'http://miguel-molina.es/blog/2013/05/14/documentacion-de-git-en-castellano/';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Por favor, active JavaScript para ver los<a href="http://disqus.com/?ref_noscript">comentarios.</a><br>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</section>
+
+    </div>
+    <footer id="footer">
+    <div style="display:inline">
+    Copyright &copy; 2013
+
+    Miguel Molina
+.
+	Powered by <a href="http://octopress.org">Octopress</a> |
+
+    Design by <a href="http://miguel-molina.es">Miguel Molina</a>
+
+</div>
+
+
+    </footer>
+    <script src="/javascripts/fabric.js"></script>
+
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+<!-- end toload --> 
+</div>
+</div>
+<script src="/javascripts/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+;(function($){$().UItoTop({easingType:'easeOutCirc'});})(jQuery); 
+/*]]>*/
+</script><!-- remove it to remove the scroll to top button -->
+</body>
+</html>
