@@ -1,14 +1,20 @@
 
-<!DOCTYPE HTML>
-<html>
+	<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Documentación de Git en Español | Miguel Molina</title>
     <meta name="author" content="Miguel Molina">
     
 	<meta name="description" content="A pesar de que en la carrera tuve una asignatura llamada &#8220;Herramientas de Programacion&#8221;, algo que ahora echo en falta es, precisamente, &hellip;">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+	<meta name="viewport" content="width=device-width">
 
 	<link href="/atom.xml" rel="alternate" title="Miguel Molina" type="application/atom+xml">
 	<link rel="canonical" href="">
@@ -19,39 +25,29 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" />
 
-	
-    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Amethysta|Inconsolata|Noto+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,300,300italic,400italic,500,500italic,700italic' rel='stylesheet' type='text/css'>
 
-    <link href='http://fonts.googleapis.com/css?family=Amethysta|Inconsolata|Noto+Serif' rel='stylesheet' type='text/css'>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="/css/main.css">
 
-    <script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-    <!-- remove or comment it to disable ajaxification -->   
-    <script src="/javascripts/ajaxify.js"></script>
-   
-    
-    
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-38035414-1']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
-
-
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+	<![endif]-->
 </head>
 
+	<body>
+		<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-<body>
-    <div id="wrapper">
-    <header id="header" class="inner"><!-- h1 class="animated bounceInDown" - for more effects see _animate.scss -->
+	    <div id="wrapper">
+		    <header id="header" class="inner">
+		    	<!-- h1 class="animated bounceInDown" - for more effects see _animate.scss -->
 <h1>
 	<div class="pointcolor"> </div>
     <div class="headerbg">
@@ -66,21 +62,21 @@
   <!-- Twitter -->
   
   <li>
-  <a href="http://www.twitter.com/mmolinastudio" class="sprite-Twitter" title="Twitter"></a>
+    <a href="http://www.twitter.com/mmolinastudio" class="sprite-Twitter" title="Twitter"></a>
   </li>
   
 
   <!-- Facebook -->
   
   <li>
-  <a href="http://www.facebook.com/miguelitomp" class="sprite-Facebook" title="Facebook"></a>
+    <a href="http://www.facebook.com/miguelitomp" class="sprite-Facebook" title="Facebook"></a>
   </li>
   
 
   <!-- LinkedIn -->
   
   <li>
-  <a href="http://www.linkedin.com/in/miguelmolinaplanelles" class="sprite-LinkedIn" title="LinkedIn"></a>
+    <a href="http://www.linkedin.com/in/miguelmolinaplanelles" class="sprite-LinkedIn" title="LinkedIn"></a>
   </li>
   
 
@@ -93,21 +89,21 @@
   <!-- GitHub -->
   
   <li>
-  <a href="http://github.com/mmolinastudio" class="sprite-Github" title="Github"></a>
+    <a href="http://github.com/mmolinastudio" class="sprite-Github" title="Github"></a>
   </li>
   
 
   <!-- RSS -->
   
   <li>
-  <a href="/atom.xml" class="sprite-Rss" title="rss"></a>
+    <a href="/atom.xml" class="sprite-Rss" title="rss"></a>
   </li>
   
 
   <!-- Mail -->
   
   <li>
-  <a href="mailto:me@miguel-molina.es?Subject=contacto_miguel-molina.es" class="sprite-Mail" title="me@miguel-molina.es"></a>
+    <a href="mailto:me@miguel-molina.es?Subject=contacto_miguel-molina.es" class="sprite-Mail" title="me@miguel-molina.es"></a>
   </li>
   
 </ul>
@@ -130,12 +126,11 @@
 </nav>
 
 
-</header>
+		    </header>
 
-<div id="toload">
-<!-- begin toload --> 
-    <div id="content" class="inner">
-        <article class="post">
+			<div>
+			    <div id="content" class="inner">
+			        <article class="post">
 	
 	<h2 class="title">Documentación de Git en Español</h2>
 	<div class="entry-content">
@@ -149,7 +144,7 @@
 
 <p>La cuestión es que nunca he usado en profundidad ningún programa de control de versiones. Desde hace algo más de un año he querido aprender Git, pero a la hora de ponerme a picar seguía con la mismas malas prácticas de siempre, por eso de que no estaba trabajando para nadie y me apañaba con mi forma de organizarme. Que básicamente consistía en: Hago cambios -> ¿Funciona? si -> sobreescribo | no -> ctrl+z. Y de vez en cuando guardar una copia del proyecto.</p>
 
-<p>Hace unos tres o cuatro meses me decidí por fin a usar Git en todos mis proyectos. He de decir que <a href="http://windows.github.com/" title="github for windows">Github for Windows</a> me ayudó bastante a dar ese paso. La interfaz está bien diseñada, es bonita e increíblemente fácil de usar. En cuanto a git en la consola de linux, el uso que le he dado hasta el momento ha sido muy básico; crear repositorios, hacer commits, configurarlo con mi cuenta de github y poco más. Pero me pierdo un poco cuando empiezo a crear branches, deshacer cambios, o cosas mas complejas, por eso necesito ponerme en serio y dedicarle algo de tiempo. Ayer vi que ya estaba casi toda la documentación traducida al castellano, así que la junté en un archivo junto a varias Cheat Sheets y hoy lo he imprimido y encuadernado (a ver cuando me compro un kindle).</p>
+<p>Hace unos tres o cuatro meses me decidí por fin a usar Git en todos mis proyectos. He de decir que <a href="http://windows.github.com/" title="github for windows">Github for Windows</a> me ayudó bastante a dar ese paso. La interfaz está bien diseñada, es bonita e increiblemente fácil de usar. En cuanto a git en la consola de linux, el uso que le he dado hasta el momento ha sido muy básico; crear repositorios, hacer commits, configurarlo con mi cuenta de github y poco más. Pero me pierdo un poco cuando empiezo a crear branches, deshacer cambios, o cosas mas complejas, por eso necesito ponerme en serio y dedicarle algo de tiempo. Ayer vi que ya estaba casi toda la documentación traducida al castellano, así que la junté en un archivo junto a varias Cheat Sheets y hoy lo he imprimido y encuadernado (a ver cuando me compro un kindle).</p>
 
 <p>Dejo aquí los archivos por si alguien (o yo mismo) quiere la documentación de GIT en odt/pdf. <small>Actualizada a día 13 de mayo. 92% traducido.</small><br/><strong><a href="/archivos/git_book.pdf">git_book.pdf</a></strong><br/><strong><a href="/archivos/git_book.odt">git_book.odt</a></strong></p>
 
@@ -208,9 +203,10 @@
 
 </section>
 
-    </div>
-    <footer id="footer">
-    <div style="display:inline">
+			    </div>
+
+			    <footer id="footer">
+			    	<div style="display:inline">
     Copyright &copy; 2013
 
     Miguel Molina
@@ -220,30 +216,42 @@
     Design by <a href="http://miguel-molina.es">Miguel Molina</a>
 
 </div>
+			    </footer>
 
+			    
 
-    </footer>
-    <script src="/javascripts/fabric.js"></script>
+			</div>
+		</div>
 
-<script src="/javascripts/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-	$('.fancybox').fancybox();
-})(jQuery);
-</script> <!-- Delete or comment this line to disable Fancybox -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/js/vendor/bootstrap.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
 
-
-
-
-
-<!-- end toload --> 
-</div>
-</div>
-<script src="/javascripts/jquery.ui.totop.js" type="text/javascript"></script>
+<script src="/js/vendor/jquery.ui.totop.js" type="text/javascript"></script>
 <script type="text/javascript">
 /*<![CDATA[*/
 ;(function($){$().UItoTop({easingType:'easeOutCirc'});})(jQuery); 
 /*]]>*/
-</script><!-- remove it to remove the scroll to top button -->
-</body>
+</script>
+
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-38035414-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+	</body>
 </html>

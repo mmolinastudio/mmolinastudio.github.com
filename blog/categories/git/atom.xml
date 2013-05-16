@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Miguel Molina]]></title>
   <link href="http://miguel-molina.es/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
-  <updated>2013-05-15T23:48:01+02:00</updated>
+  <updated>2013-05-16T21:31:28+02:00</updated>
   <id>http://miguel-molina.es/</id>
   <author>
     <name><![CDATA[Miguel Molina]]></name>
@@ -28,7 +28,7 @@
 
 <p>La cuestión es que nunca he usado en profundidad ningún programa de control de versiones. Desde hace algo más de un año he querido aprender Git, pero a la hora de ponerme a picar seguía con la mismas malas prácticas de siempre, por eso de que no estaba trabajando para nadie y me apañaba con mi forma de organizarme. Que básicamente consistía en: Hago cambios -> ¿Funciona? si -> sobreescribo | no -> ctrl+z. Y de vez en cuando guardar una copia del proyecto.</p>
 
-<p>Hace unos tres o cuatro meses me decidí por fin a usar Git en todos mis proyectos. He de decir que <a href="http://windows.github.com/" title="github for windows">Github for Windows</a> me ayudó bastante a dar ese paso. La interfaz está bien diseñada, es bonita e increíblemente fácil de usar. En cuanto a git en la consola de linux, el uso que le he dado hasta el momento ha sido muy básico; crear repositorios, hacer commits, configurarlo con mi cuenta de github y poco más. Pero me pierdo un poco cuando empiezo a crear branches, deshacer cambios, o cosas mas complejas, por eso necesito ponerme en serio y dedicarle algo de tiempo. Ayer vi que ya estaba casi toda la documentación traducida al castellano, así que la junté en un archivo junto a varias Cheat Sheets y hoy lo he imprimido y encuadernado (a ver cuando me compro un kindle).</p>
+<p>Hace unos tres o cuatro meses me decidí por fin a usar Git en todos mis proyectos. He de decir que <a href="http://windows.github.com/" title="github for windows">Github for Windows</a> me ayudó bastante a dar ese paso. La interfaz está bien diseñada, es bonita e increiblemente fácil de usar. En cuanto a git en la consola de linux, el uso que le he dado hasta el momento ha sido muy básico; crear repositorios, hacer commits, configurarlo con mi cuenta de github y poco más. Pero me pierdo un poco cuando empiezo a crear branches, deshacer cambios, o cosas mas complejas, por eso necesito ponerme en serio y dedicarle algo de tiempo. Ayer vi que ya estaba casi toda la documentación traducida al castellano, así que la junté en un archivo junto a varias Cheat Sheets y hoy lo he imprimido y encuadernado (a ver cuando me compro un kindle).</p>
 
 <p>Dejo aquí los archivos por si alguien (o yo mismo) quiere la documentación de GIT en odt/pdf. <small>Actualizada a día 13 de mayo. 92% traducido.</small><br/><strong><a href="/archivos/git_book.pdf">git_book.pdf</a></strong><br/><strong><a href="/archivos/git_book.odt">git_book.odt</a></strong></p>
 
