@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: internet | Miguel Molina]]></title>
-  <link href="http://miguel-molina.es/blog/categories/internet/atom.xml" rel="self"/>
+  <title><![CDATA[Category: tor | Miguel Molina]]></title>
+  <link href="http://miguel-molina.es/blog/categories/tor/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
   <updated>2013-05-23T19:38:17+02:00</updated>
   <id>http://miguel-molina.es/</id>

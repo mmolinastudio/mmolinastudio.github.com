@@ -4,7 +4,7 @@
   <title><![CDATA[Miguel Molina]]></title>
   <link href="http://miguel-molina.es/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
-  <updated>2013-05-23T19:32:57+02:00</updated>
+  <updated>2013-05-23T19:38:17+02:00</updated>
   <id>http://miguel-molina.es/</id>
   <author>
     <name><![CDATA[Miguel Molina]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Privacidad en Internet]]></title>
-    <link href="http://miguel-molina.es/blog/2013/05/22/privacidad-en-internet/"/>
-    <updated>2013-05-22T11:34:00+02:00</updated>
-    <id>http://miguel-molina.es/blog/2013/05/22/privacidad-en-internet</id>
+    <link href="http://miguel-molina.es/blog/2013/05/23/privacidad-en-internet/"/>
+    <updated>2013-05-23T12:34:00+02:00</updated>
+    <id>http://miguel-molina.es/blog/2013/05/23/privacidad-en-internet</id>
     <content type="html"><![CDATA[<p>Esta mañana me ha entrado la preocupación por la privacidad. Hace unos meses puse un anuncio para vender una bici donde aparecía mi número de teléfono. A través del whatsapp me han contactado varias personas, y un par de ellas parece que no entendieron el anuncio. Es decir, que vendía una bici, no vendía piezas ni quería cambiarlo por nada. Pues unas de estas personas, al insistirme, ser ignorado y haber herido su orgullo de troll, me ha amenazado por whatsapp. Para empezar, hay que tener pocas luces para amenazar por whatsapp. Lo tengo muy fácil para ir a la policía y denunciarlo. No me lo he tomado a la ligera porque tenía una foto puesta en en perfil del whatsapp (una aberración en cuanto a seguridad en la que no debí haber caído). El problema es que al buscar mi teléfono en google, he llegado a saber mi email por un pdf público de una ONG, y a través del email he llegado a mi dirección de casa por el whois de un dominio que tenía desprotegido.</p>
 
 <p>Esto me ha recordado que tengo que preocuparme un poco más por mis datos personales. Lo primero que he hecho hoy ha sido revisar la privacidad del dominio. Ya está configurado y en alguna de las páginas han desaparecido mis datos, pero en otra la información sigue ahí, espero que sea cuestión de tiempo y la caché se actualice. Después he escrito a la ONG (una protectora de animales) por facebook, me han contestado rapidísimo y ya lo han cambiado. Y lo tercero que he hecho ha sido quitar mi teléfono del anuncio de la bici. Se acabó que cualquiera pueda contactar conmigo por whatsapp. Para eso está el email. Aparte, por si acaso he revisado la privacidad de mis perfiles de Facebook y Linkedin.</p>
