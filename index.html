@@ -10,7 +10,7 @@
 	<title>Miguel Molina</title>
     <meta name="author" content="Miguel Molina">
     
-	<meta name="description" content="Privacidad en Internet Published on: May 23rd, 2013 Tags: internet, privacidad, tor Esta mañana me ha entrado la preocupación por la privacidad. &hellip;">
+	<meta name="description" content="GitHub. Cómo participar en el proyecto de un amigo. Published on: Jun 5th, 2013 Tags: git, github Hoy he tenido que averiguar cómo participar en el &hellip;">
 	
 	
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
@@ -133,6 +133,147 @@
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2013/06/05/github-colaborar-en-el-proyecto-de-un-amigo/">
+		
+			GitHub. Cómo participar en el proyecto de un amigo.</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-05T20:02:00+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/github/'>github</a>
+
+
+</div>
+    </div>
+		<p>Hoy he tenido que averiguar cómo participar en el proyecto de otro usuario de github. Por un momento he pensado que lo más fácil era trabajar con su cuenta (usando su username/password), pero era evidente que debía haber una forma fácil de participar en un proyecto ajeno usando mi propia cuenta de github. A continuación explicaré cómo hacerlo.</p>
+
+<h3>1. Obtener acceso como colaborador</h3>
+
+<p>El dueño del repositorio en el que vamos a trabajar ha de darnos acceso como colaborador. Para ello deberá acceder al repositorio, entrar en <em>settings/collaborators</em> y añadirnos -<em>add a friend</em>- a la lista.</p>
+
+<h3>2. Crear una nueva clave SSH</h3>
+
+<pre><code>$ ssh-keygen -t rsa -C "my-friend's-email-address"
+</code></pre>
+
+<p>Probablemente nos dirá que ya existe una clave ssh. Aquí hemos de tener cuidado de no sobreescribir la clave que ya teníamos para nuestro usuario. Si por ejemplo el repositorio donde quiero trabajar se llama <em>projectx</em>, podemos llamar al archivo <em>~/.ssh/id_rsa_projectx</em>.</p>
+
+<h3>3. Agregar la clave en gitHub</h3>
+
+<p>Le damos la clave SSH a nuestro amigo. Para obtenerla, hacer:</p>
+
+<pre><code>$ cat ~/.ssh/id_rsa_projectx.pub
+</code></pre>
+
+<p>obtendremos algo como esto:</p>
+
+<pre><code>ssh-rsa "un-monton-de-letras-y-numeros" emaildenuestroamigo@something.com
+</code></pre>
+
+<p>Nuestro amigo deberá acceder a su cuenta, ir a <a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a> y crear una nueva clave ssh para nuestro equipo, poniendole un título descriptivo (e.g. <em>Git - jimmyUbuntu - 5.junio.2013</em>) y en el cuadro grande pegar la clave ssh.</p>
+
+<h3>4. Archivo de configuración</h3>
+
+<p>Crearemos un archivo de configuración para poder usar fácilmente una clave ssh u otra a la hora de hacer deploy.</p>
+
+<pre><code>$ touch ~/.ssh/config
+</code></pre>
+
+<p>Lo abrimos y escribimos lo siguiente:</p>
+
+<pre><code>#Default GitHub
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+Host github-projectx
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_projectx
+</code></pre>
+
+<h3>5. Deploy</h3>
+
+<p>Añadimos el repositorio remoto con:</p>
+
+<pre><code>$ git remote add origin git@github-projectx:friendusername/projectx.git
+</code></pre>
+
+<p>Puede que nos de siguiente error: <code>fatal: remote origin already exists</code> En este caso, haremos:</p>
+
+<pre><code>$ git remote rm origin
+</code></pre>
+
+<p>Y volveremos a ejecutar:</p>
+
+<pre><code>$ git remote add origin git@github-hexheaddriver:hexheaddriver/hexheaddriver.github.com.git
+</code></pre>
+
+<p>Llegado a este punto, ya tenemos todo configurado para trabajar con el repositorio remoto. Ahora podemos hacer pull/push al repositorio remoto.</p>
+
+<pre><code>$ git pull origin master
+</code></pre>
+
+<p>Si antes de hacer el pull ya tuvieramos algo en la carpeta del proyecto, haría automáticamente el merge, lo que podría darnos algún conflicto entre archivos que <a href="http://git-scm.com/book/es/Ramificaciones-en-Git-Procedimientos-b%C3%A1sicos-para-ramificar-y-fusionar#Principales-conflictos-que-pueden-surgir-en-las-fusiones">tendríamos que resover</a>.</p>
+
+<p>Referencias:</p>
+
+<p><small>Documentación de Git. <a href="http://git-scm.com/book/es/">http://git-scm.com/book/es/</a></small>
+<small>How to Work with GitHub and Multiple Accounts. <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/</a></small></p>
+
+		
+		
+	</div>
+	<br>
+
+	<p class="meta">
+		
+			<span class="comments"><a href="/blog/2013/06/05/github-colaborar-en-el-proyecto-de-un-amigo/#disqus_thread">Comentarios</a></span>
+		
+	</p>
+
+	
+	
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'miguelmolinaes'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+
+
+	</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2013/05/23/privacidad-en-internet/">
 		
 			Privacidad en Internet</a>
@@ -166,7 +307,7 @@
 
 <p>En cierto modo, puedo estar más tranquilo. Pero hasta ahora sólo he tenido en cuenta que mis datos &#8220;desaparezcan&#8221; del buscador de Google (doy por hecho que lo que no sale en google, no sale en Bing y otros). Evidentemente Google (Gmail, Drive, Calendar, Youtube,&#8230;), Facebook y un montón de webs donde me he registrado a lo largo de mi vida tienen cientos de datos sobre mi. ¿Algún día me arrepentiré de haber dado toda esa información? Según la filosofía actual de Google &#8220;Don&#8217;t be evil&#8221;, no tenemos nada de lo que preocuparnos. ¿Pero qué les impide mañana cambiar de filosofía? Son empresas y como tales sólo velan por sus intereses.</p>
 
-<p>Y aunque estas empresas que saben todo sobre nosotros traten legítimamente nuestros datos, hemos de saber que ofrecen la información a tribunales y gobiernos constantemente y cada vez más (aunque se reservan el derecho de dar o no la información). Desde hace un par de años, Google publica un <a href="https://www.google.com/transparencyreport/" title="Google Transparency Report">informe semestral</a> sobre el numero de peticiones que recibe por parte de Gobiernos, Tribunales, Administraciones Públicas (de derechos de autor por ejemplo) y Policías, pidiendo información sobre usuarios. Y como bien dicen ellos mismos <a href="https://www.google.com/transparencyreport/userdatarequests/faq/" title="Faq Transparency Report">aquí</a>, &#8220;De ningún modo somos los únicos que recibimos estas solicitudes. (&#8230;) las estadísticas incluyen principalmente las solicitudes relacionadas con asuntos delictivos. No obstante, no podemos estar seguros de que una solicitud esté relacionada con la investigación de algún delito, así que probablemente un pequeño número de solicitudes quede fuera de esta categoría&#8221;. En este informe también podemos ver qué productos de Google están restringidos en ciertos países. Por ejemplo, Google Maps en Marruecos, o Google Sites, Picasa y YouTube en China. Inspirándose en este informe, Twitter publica desde el año pasado <a href="https://blog.twitter.com/2012/twitter-transparency-report" title="Twitter Transparency Report">otro informe</a> parecido.</p>
+<p>Y aunque estas empresas que saben todo sobre nosotros traten legítimamente nuestros datos, hemos de saber que ofrecen la información a tribunales y gobiernos constantemente y cada vez más (aunque se reservan el derecho de dar o no la información). Desde hace un par de años, Google publica un <a href="https://www.google.com/transparencyreport/" title="Google Transparency Report">informe semestral</a> sobre el numero de peticiones que recibe por parte de Gobiernos, Tribunales, Administraciones Públicas (de derechos de autor por ejemplo) y Policías, pidiendo información sobre usuarios. Y como bien dicen ellos mismos <a href="https://www.google.com/transparencyreport/userdatarequests/faq/" title="Faq Transparency Report">aquí</a>, <em>&#8220;De ningún modo somos los únicos que recibimos estas solicitudes. (&#8230;) las estadísticas incluyen principalmente las solicitudes relacionadas con asuntos delictivos. No obstante, no podemos estar seguros de que una solicitud esté relacionada con la investigación de algún delito, así que probablemente un pequeño número de solicitudes quede fuera de esta categoría&#8221;</em>. En este informe también podemos ver qué productos de Google están restringidos en ciertos países. Por ejemplo, Google Maps en Marruecos, o Google Sites, Picasa y YouTube en China. Inspirándose en este informe, Twitter publica desde el año pasado <a href="https://blog.twitter.com/2012/twitter-transparency-report" title="Twitter Transparency Report">otro informe</a> parecido.</p>
 
 <p>Con argumentos como la Seguridad Nacional, la Seguridad Ciudadana, las amenazas cibernéticas y el clásico &#8220;si no tienes nada que ocultar, no tienes nada que temer&#8221;, los Gobiernos cada vez ponen más medidas para el Control de la Información. Leyes como <a href="http://es.wikipedia.org/wiki/Stop_Online_Piracy_Act" title="Ley SOPA">SOPA</a>(2011), <a href="http://es.wikipedia.org/wiki/PROTECT_IP_Act" title="ley PIPA">PIPA</a> o <a href="http://es.wikipedia.org/wiki/Cyber_Intelligence_Sharing_and_Protection_Act" title="Ley CISPA">CISPA</a>(2013) en EEUU, o la <a href="http://es.wikipedia.org/wiki/Ley_Sinde" title="Ley Sinde">ley Sinde/Wert</a> de aquí (nada comparado con las otras), que pretenden tomar el control de la anarquía de información que es Internet hoy en día. Si hace 50 años los gobiernos hubieran dispuesto de un control así sobre sus ciudadanos, no habrían surgido los movimientos civiles ni las revoluciones de S.XX. que derrocaron tantas dictaduras. ¿Y acaso hoy en día no son necesarios esos activistas que muchos llaman despectivamente anti-sistema, y que en muchos países son acusados de traidores, terroristas, gays, ateos o blasfemos?</p>
 

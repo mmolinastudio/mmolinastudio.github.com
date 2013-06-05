@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Miguel Molina]]></title>
   <link href="http://miguel-molina.es/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
-  <updated>2013-05-23T19:38:17+02:00</updated>
+  <updated>2013-06-05T22:18:35+02:00</updated>
   <id>http://miguel-molina.es/</id>
   <author>
     <name><![CDATA[Miguel Molina]]></name>
@@ -12,6 +12,90 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub. Cómo participar en el proyecto de un amigo.]]></title>
+    <link href="http://miguel-molina.es/blog/2013/06/05/github-colaborar-en-el-proyecto-de-un-amigo/"/>
+    <updated>2013-06-05T20:02:00+02:00</updated>
+    <id>http://miguel-molina.es/blog/2013/06/05/github-colaborar-en-el-proyecto-de-un-amigo</id>
+    <content type="html"><![CDATA[<p>Hoy he tenido que averiguar cómo participar en el proyecto de otro usuario de github. Por un momento he pensado que lo más fácil era trabajar con su cuenta (usando su username/password), pero era evidente que debía haber una forma fácil de participar en un proyecto ajeno usando mi propia cuenta de github. A continuación explicaré cómo hacerlo.</p>
+
+<h3>1. Obtener acceso como colaborador</h3>
+
+<p>El dueño del repositorio en el que vamos a trabajar ha de darnos acceso como colaborador. Para ello deberá acceder al repositorio, entrar en <em>settings/collaborators</em> y añadirnos -<em>add a friend</em>- a la lista.</p>
+
+<h3>2. Crear una nueva clave SSH</h3>
+
+<pre><code>$ ssh-keygen -t rsa -C "my-friend's-email-address"
+</code></pre>
+
+<p>Probablemente nos dirá que ya existe una clave ssh. Aquí hemos de tener cuidado de no sobreescribir la clave que ya teníamos para nuestro usuario. Si por ejemplo el repositorio donde quiero trabajar se llama <em>projectx</em>, podemos llamar al archivo <em>~/.ssh/id_rsa_projectx</em>.</p>
+
+<h3>3. Agregar la clave en gitHub</h3>
+
+<p>Le damos la clave SSH a nuestro amigo. Para obtenerla, hacer:</p>
+
+<pre><code>$ cat ~/.ssh/id_rsa_projectx.pub
+</code></pre>
+
+<p>obtendremos algo como esto:</p>
+
+<pre><code>ssh-rsa "un-monton-de-letras-y-numeros" emaildenuestroamigo@something.com
+</code></pre>
+
+<p>Nuestro amigo deberá acceder a su cuenta, ir a <a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a> y crear una nueva clave ssh para nuestro equipo, poniendole un título descriptivo (e.g. <em>Git - jimmyUbuntu - 5.junio.2013</em>) y en el cuadro grande pegar la clave ssh.</p>
+
+<h3>4. Archivo de configuración</h3>
+
+<p>Crearemos un archivo de configuración para poder usar fácilmente una clave ssh u otra a la hora de hacer deploy.</p>
+
+<pre><code>$ touch ~/.ssh/config
+</code></pre>
+
+<p>Lo abrimos y escribimos lo siguiente:</p>
+
+<pre><code>#Default GitHub
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+Host github-projectx
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_projectx
+</code></pre>
+
+<h3>5. Deploy</h3>
+
+<p>Añadimos el repositorio remoto con:</p>
+
+<pre><code>$ git remote add origin git@github-projectx:friendusername/projectx.git
+</code></pre>
+
+<p>Puede que nos de siguiente error: <code>fatal: remote origin already exists</code> En este caso, haremos:</p>
+
+<pre><code>$ git remote rm origin
+</code></pre>
+
+<p>Y volveremos a ejecutar:</p>
+
+<pre><code>$ git remote add origin git@github-hexheaddriver:hexheaddriver/hexheaddriver.github.com.git
+</code></pre>
+
+<p>Llegado a este punto, ya tenemos todo configurado para trabajar con el repositorio remoto. Ahora podemos hacer pull/push al repositorio remoto.</p>
+
+<pre><code>$ git pull origin master
+</code></pre>
+
+<p>Si antes de hacer el pull ya tuvieramos algo en la carpeta del proyecto, haría automáticamente el merge, lo que podría darnos algún conflicto entre archivos que <a href="http://git-scm.com/book/es/Ramificaciones-en-Git-Procedimientos-b%C3%A1sicos-para-ramificar-y-fusionar#Principales-conflictos-que-pueden-surgir-en-las-fusiones">tendríamos que resover</a>.</p>
+
+<p>Referencias:</p>
+
+<p><small>Documentación de Git. <a href="http://git-scm.com/book/es/">http://git-scm.com/book/es/</a></small>
+<small>How to Work with GitHub and Multiple Accounts. <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/</a></small></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Documentación de Git en Español]]></title>
