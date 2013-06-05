@@ -4,7 +4,7 @@
   <title><![CDATA[Category: github | Miguel Molina]]></title>
   <link href="http://miguel-molina.es/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
-  <updated>2013-06-05T22:18:35+02:00</updated>
+  <updated>2013-06-05T22:30:55+02:00</updated>
   <id>http://miguel-molina.es/</id>
   <author>
     <name><![CDATA[Miguel Molina]]></name>
@@ -73,7 +73,7 @@ Host github-projectx
 <pre><code>$ git remote add origin git@github-projectx:friendusername/projectx.git
 </code></pre>
 
-<p>Puede que nos de siguiente error: <code>fatal: remote origin already exists</code> En este caso, haremos:</p>
+<p>Puede que nos de el siguiente error: <code>fatal: remote origin already exists</code> En ese caso haremos:</p>
 
 <pre><code>$ git remote rm origin
 </code></pre>
@@ -83,7 +83,7 @@ Host github-projectx
 <pre><code>$ git remote add origin git@github-hexheaddriver:hexheaddriver/hexheaddriver.github.com.git
 </code></pre>
 
-<p>Llegado a este punto, ya tenemos todo configurado para trabajar con el repositorio remoto. Ahora podemos hacer pull/push al repositorio remoto.</p>
+<p>Llegado a este punto, ya tenemos todo configurado para trabajar con el repositorio remoto. Ahora podremos hacer pull/push al repositorio remoto.</p>
 
 <pre><code>$ git pull origin master
 </code></pre>
@@ -92,7 +92,7 @@ Host github-projectx
 
 <p>Referencias:</p>
 
-<p><small>Documentación de Git. <a href="http://git-scm.com/book/es/">http://git-scm.com/book/es/</a></small>
+<p><small>Documentación de Git. <a href="http://git-scm.com/book/es/">http://git-scm.com/book/es/</a></small><br>
 <small>How to Work with GitHub and Multiple Accounts. <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/</a></small></p>
 ]]></content>
   </entry>
