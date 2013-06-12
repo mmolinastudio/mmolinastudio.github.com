@@ -4,7 +4,7 @@
   <title><![CDATA[Miguel Molina]]></title>
   <link href="http://miguel-molina.es/atom.xml" rel="self"/>
   <link href="http://miguel-molina.es/"/>
-  <updated>2013-06-05T22:30:55+02:00</updated>
+  <updated>2013-06-12T11:13:29+02:00</updated>
   <id>http://miguel-molina.es/</id>
   <author>
     <name><![CDATA[Miguel Molina]]></name>
@@ -80,7 +80,7 @@ Host github-projectx
 
 <p>Y volveremos a ejecutar:</p>
 
-<pre><code>$ git remote add origin git@github-hexheaddriver:hexheaddriver/hexheaddriver.github.com.git
+<pre><code>$ git remote add origin git@github-projectx:friendusername/projectx.git
 </code></pre>
 
 <p>Llegado a este punto, ya tenemos todo configurado para trabajar con el repositorio remoto. Ahora podremos hacer pull/push al repositorio remoto.</p>
@@ -93,7 +93,8 @@ Host github-projectx
 <p>Referencias:</p>
 
 <p><small>Documentación de Git. <a href="http://git-scm.com/book/es/">http://git-scm.com/book/es/</a></small><br>
-<small>How to Work with GitHub and Multiple Accounts. <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/</a></small></p>
+<small>How to Work with GitHub and Multiple Accounts. <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/</a></small><br>
+<small>Configurar repositorio Git para trabajo en grupo. <a href="http://snarvaez.com.ar/libertad/index.php/2012/04/21/configurar-repositorio-git-para-trabajo-en-grupo-ssh-key-generation-and-distribution/">http://snarvaez.com.ar/libertad/index.php/2012/04/21/configurar-repositorio-git-para-trabajo-en-grupo-ssh-key-generation-and-distribution/</a></small></p>
 ]]></content>
   </entry>
   
@@ -257,7 +258,7 @@ $ sudo pecl install mongo
 
 <p>Igual que con el anterior, cada vez escribía menos. Lo fui abandonando igual que a mi cuenta de twitter en estos últimos meses. Hasta que en febrero de 2012 me cambié a Posterous y seguí escribiendo al mismo ritmo. O sea, f_kn shit. 14 posts en dos años.</p>
 
-<p>Ahora veo los blogs y no me gustan. Nunca ha habido coherencia entre unos posts y otros. He tocado en todo tipo de temas -lo cual, si buscas reputación y lectores, es lo peor que puedes hacer-, e incluso puede que haya ofendido a algún lector alguna vez. Unas veces he usado un lenguaje vulgar y otras más cuidado. Pero la verdad es que todo eso me ha dado siempre igual. Eran blogs personales.</p>
+<p>Ahora veo los blogs y no me gustan. Nunca ha habido coherencia entre unos posts y otros. He tocado todo tipo de temas -lo cual, si buscas reputación y lectores, es lo peor que puedes hacer-, e incluso puede que haya ofendido a algún lector alguna vez. Unas veces he usado un lenguaje vulgar y otras más cuidado. Pero la verdad es que todo eso me ha dado siempre igual. Eran blogs personales.</p>
 
 <p>Ahora que <a href="https://posterous.com/bye.html" title="Posterous">Posterous</a> desaparece, llega el momento de cambiarse a una plataforma mejor, <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>/<a href="http://pages.github.com/" title="github pages">Github</a> (gracias por la información <a href="http://chimeces.com/" title="Joakin's page">Joakin</a>). Con <a href="http://octopress.org/" title="Octopress">Octopres</a> (jekyll preconfigurado), el blog ya está montado con un tema básico. Es muy facil instalar temas nuevos (yo me estoy basando en <a href="https://github.com/panks/fabric" title="Fabric Theme">Fabric</a>, con la idea de integrarlo con initializr). Jekyll está completamente escrito en ruby y usa gemas como <a href="http://dafoster.net/projects/rdiscount/" title="RDiscount">rdiscount</a> (para convertir documentos <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> en HTML), <a href="http://sass-lang.com/" title="sass css preprocessor">SASS</a> (preprocesador CSS), <a href="https://github.com/Shopify/liquid" title="liquid">Liquid</a> (motor de plantillas con una sintaxis tipo Django y Twig) y más que ya iré descubriendo.</p>
 
