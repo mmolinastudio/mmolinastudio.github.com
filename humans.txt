@@ -14,4 +14,4 @@
 	Doctype: HTML5
 	IDE: Sublime Text 2
 	Standards: HTML5, CSS3, Ruby
-	Technology: jekyll, Git, jQuery, Bootstrap, HTML5Boilerplate, Initializr
+	Technology: Harpjs, LESS, jade, Initializr
