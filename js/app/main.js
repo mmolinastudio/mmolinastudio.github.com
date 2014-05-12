@@ -98,7 +98,7 @@ define(["jquery"], function($) {
 			var dispersionX = 5;
 			var centerX = canvas.width / 2;
 			var startY = -50;
-			context.strokeStyle = "#CC0000";
+			context.strokeStyle = "#AA0000";
 			drawVerticalLines_Recursive(0, numVerticalLines, intGridWidthX, dispersionX, centerX, startY);
 			drawHorizontalLines_Recursive(0, 0);
 		}
