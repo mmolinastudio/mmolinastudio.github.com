@@ -1,8 +1,99 @@
-<!DOCTYPE html><html class="no-js"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>miguel-molina.es</title><meta name="description" content="Welcome to my site."/><meta name="author" content="Miguel Molina"/><meta name="handheldfriendly" content="true"/><meta name="mobileoptimized" content="320"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="cleartype" content="on"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><link rel="stylesheet" href="/css/main.css"/><link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:100,200,300,400,500,600,700,800,900|Passion+One|Permanent+Marker" rel="stylesheet" type="text/css"/><link rel="icon" href="/favicon.png" type="image/png"/><script data-main="/js/app-libsLocal" src="/js/lib/require/require.min.js"></script></head><body><!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser.
-Please <a href="http://browsehappy.com/">upgrade your browser</a>
-to improve your experience.</p><![endif]--><div class="header-wrapper"><canvas id="headerCanvas"></canvas><header class="main-header"><div class="social-links"><ul><li><a href="http://www.twitter.com/mmolinastudio" title="Twitter" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li><li><a href="https://www.linkedin.com/in/miguelmolinaplanelles" title="Linkedin" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li><li><a href="http://github.com/mmolinastudio" title="Github" target="_blank" class="github"><i class="fa fa-github"></i></a></li><li><a href="/feed.xml" title="rss" target="_blank" class="rss"><i class="fa fa-rss"></i></a></li><li><a href="mailto:me@miguel-molina.es?Subject=Hi%20miguel" title="Email" class="mail">@</a></li></ul></div><h1><a href="/">Miguel Molina</a></h1><nav><ul><li><a href="/articles">Articles</a></li><li><a href="/portfolio">Portfolio</a></li></ul></nav></header></div><div class="container"><p>Hello, I’m a 28 year-old Front End Developer from Alicante, Spain.</p><p>JavaScript, HTML5 and CSS3 are my main interests. I love learning cutting edge technologies and trying to work with in my projects.</p><p>JS libraries and frameworks like Backbone, Ember or React. The large amount of features that HTML5 has brought such as Canvas, WebRTC, WebSockets or localStorage. CSS frameworks and pre-processors, Node.js, etc... Thanks to all these free projects, we are right now living a Renaissance of JavaScript and new paradigms of web programming. These challenges are my motivation to improve every day.</p><blockquote cite="Buckminster Fuller"><p>If you can't predict the future, design it.</p><p><cite><a href="http://en.wikipedia.org/wiki/Buckminster_Fuller" rel="nofollow" target="_blank">Buckminster Fuller</a></cite></p></blockquote><h3>Last Articles</h3><ul class="post-list"><li class="post-item"><time datetime="#{ new Date(article.date }" class="post-meta-date post-date">2014-06-22</time><h3 class="post-item-title"><a href="/articles/2014-coming-back">Coming back</a></h3><a href="/articles/2014-coming-back#disqus_thread" class="post-comment-link">Comments</a></li><li class="post-item"><time datetime="#{ new Date(article.date }" class="post-meta-date post-date">2014-06-04</time><h3 class="post-item-title"><a href="/articles/2014-journey">Journey</a></h3><a href="/articles/2014-journey#disqus_thread" class="post-comment-link">Comments</a></li></ul><h4><a href="/articles">View all articles</a></h4></div><footer class="footer"><p>&copy; 2014 Miguel Molina | Built with <a href="http://harpjs.com" target="_blank">Harp</a>. Published on <a href="http://github.com" target="_blank">Github</a>.</p></footer><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-38035414-1', 'miguel-molina.es');
-ga('send', 'pageview');</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>miguel-molina.es</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="./css/style.css" rel="stylesheet"> -->
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./ico/favicon.png">
+    -->
+    <style type="text/css">
+      html, body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+        background-color: #000000;
+        min-height: 850px;
+      }
+      h1{
+        color:#EEE;
+        text-align: center;
+        /*text-shadow: desplazamiento-eje-x desplazamiento-eje-y desenfoque color;*/
+        text-shadow: 1px 1px 5px #777,
+        -50px 0px 200px #bbb, 50px 0px 200px #bbb,
+        -200px 30px 300px #bbb, 200px 30px 300px #bbb,
+        -100px 60px 300px #bbb, 100px 60px 300px #bbb;
+      }
+      p{
+        margin-right: 50px
+      }
+      .container{
+        height: 100%;
+        min-width: 350px;
+        max-width: 700px;
+        margin-top: 0;
+        padding-top: 50px;
+        background-image: url('./img/miguel_2.jpg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row-fluid">
+        <h1 class="span10 offset1" cite="Famous person">“If you can't predict the future, design it.”</h1>
+        <p><small class="pull-right muted"><cite title="Buckminster Fuller">— Buckminster Fuller</cite></small></p>
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+    <script src="./js/bootstrap-alert.js"></script>
+    <script src="./js/bootstrap-modal.js"></script>
+    <script src="./js/bootstrap-dropdown.js"></script>
+    <script src="./js/bootstrap-scrollspy.js"></script>
+    <script src="./js/bootstrap-tab.js"></script>
+    <script src="./js/bootstrap-tooltip.js"></script>
+    <script src="./js/bootstrap-popover.js"></script>
+    <script src="./js/bootstrap-button.js"></script>
+    <script src="./js/bootstrap-collapse.js"></script>
+    <script src="./js/bootstrap-carousel.js"></script>
+    <script src="./js/bootstrap-typeahead.js"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38035414-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </body>
+</html>
