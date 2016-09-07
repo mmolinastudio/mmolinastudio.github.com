@@ -32,6 +32,8 @@
         background-color: #000000;
         min-height: 850px;
       }
+      body {padding:0;}
+      * {box-sizing: border-box;}
       h1{
         color:#EEE;
         text-align: center;
@@ -46,14 +48,15 @@
       }
       .container{
         height: 100%;
-        min-width: 350px;
         max-width: 700px;
         margin-top: 0;
-        padding-top: 50px;
+        padding-top: 5%;
         background-image: url('./img/miguel_2.jpg');
         background-repeat: no-repeat;
         background-position: center bottom;
-        box-sizing: border-box;
+      }
+      .quote {
+          padding: 0 3px;
       }
     </style>
   </head>
@@ -61,7 +64,7 @@
   <body>
 
     <div class="container">
-      <div class="row-fluid">
+      <div class="row-fluid quote">
         <h1 class="span10 offset1" cite="Famous person">“If you can't predict the future, design it.”</h1>
         <p><small class="pull-right muted"><cite title="Buckminster Fuller">— Buckminster Fuller</cite></small></p>
       </div>
