@@ -1,58 +1,33 @@
-body {
+html, body {
   height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  background-color: #000000;
+  min-height: 850px;
 }
-
-/* Custom container */
-.container-narrow {
-  margin: 0 auto;
-  max-width: 700px;
+body {padding:0;}
+* {box-sizing: border-box;}
+h1{
+  color:#EEE;
+  text-align: center;
+  /*text-shadow: desplazamiento-eje-x desplazamiento-eje-y desenfoque color;*/
+  text-shadow: 0 0 6px #fff;
 }
-.container-narrow > hr {
-  margin: 30px 0;
+p { margin-right: 50px; }
+.container{
+  height: 100%;
+  max-width: 600px;
+  margin-top: 0;
+  padding-top: 25px;
+  background-image: url('../img/miguel_2.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
-
-.container, .container-narrow {
-  margin-top: 20px;
+.quote {
+  padding: 0 3px;
+  border: none;
 }
-.footer{
-  margin-bottom: 40px;
-}
-.hero-unit {
-  background-color: #e7e7e7;
-}
-
-/* Supporting curriculum content */
-.curriculum {
-  margin: 30px 0;
-}
-/*.curriculum p + h4 {
-  margin-top: 28px;
-}*/
-.curriculum > div {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-}
-.curriculum > div > h4, ul {
-  margin: 10px 15px 10px 15px;
-}
-.curriculum > div > p {
-  margin: 0px 15px 5px 15px;
-}
-
-
-/* hack - for align h2 and social buttons */
-.social-buttons{
-  margin-top: 15px;
-  float: right;
-}
-h2{
-  float: left;
-}
-/* END hack */
-
-ul.list-of-labels li {
-  .label;
-}
-.label {
-  margin:3px 3px;
+.quote h1 {
+  font-weight: 100;
+  font-family: 'Raleway';
+  font-style: italic;
 }
