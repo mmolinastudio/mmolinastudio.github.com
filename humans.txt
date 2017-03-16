@@ -3,11 +3,9 @@
 
 
 /* TEAM */
-	Name: Miguel molina Planelles
+	Name: miguel molina
 	Role: Web Developer & Design
-	Site: https://github.com/mmolinastudio
-	Location: Alicante, Spain
-	Twitter: mmolinastudio
+	Site: https://github.com/msociety
 
 /* SITE */
 	Language: Spanish
